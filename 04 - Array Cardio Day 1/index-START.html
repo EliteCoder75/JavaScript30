@@ -58,10 +58,12 @@
       (accumulator, inventor) => accumulator + (inventor.passed - inventor.year),
       initialValue,
     );
-    console.log(sumWithInitial); 
+     
 
     // 5. Sort the inventors by years lived
+    const yr = inventors.sort((a, b) => (b.passed - b.year)-(a.passed - a.year));
 
+    console.log(yr);
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
